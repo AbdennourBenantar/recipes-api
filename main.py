@@ -6,7 +6,7 @@ import openpyxl,uvicorn,os
 app = FastAPI()
 
 
-@app.get("/get_random_recipe")
+@app.get("/today-recipe")
 async def Pick_recipe():
     file_num=randrange(1,4)
     file_name='./recipes'+str(file_num)+'.xlsx';
